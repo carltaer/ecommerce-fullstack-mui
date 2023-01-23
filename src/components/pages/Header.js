@@ -17,6 +17,7 @@ import {
  import { Link } from 'react-router-dom';
 
 
+
  const useStyles = makeStyles((theme) => ({
     header__container: {
       justifyContent: "space-between",
@@ -34,6 +35,19 @@ import {
     header__title: {
       fontFamily: 'roboto',
     },
+    header__button_account: {
+      borderRadius: 0,
+      margin: "0 10px",
+      fontWeight: 700,
+      color: "black",
+      fontSize: "15px",
+      border: "1px solid black",
+    },
+    header__navfont: {
+      textDecoration: "none",
+      color: "#a9a9a9",
+      fontSize: "20px"
+    }
  }))
 
 const Header = () => {
@@ -70,7 +84,7 @@ const Header = () => {
                onClick={handleClick}
                 startIcon={<FaceIcon />}
                 variant="outlined"
-                className={classes.header__button}
+                className={classes.header__button_account}
              >
                Account
               </Button>
@@ -81,10 +95,10 @@ const Header = () => {
               onClose={handleClose}
             >
               <MenuItem onClick={handleClose}>
-                <Link to="/login">Login</Link>
+                <Link to="/login" className={classes.header__navfont}>Login</Link>
               </MenuItem>
-              <MenuItem onClick={handleClose}>
-                <Link to="/registration">Sign up</Link>
+              <MenuItem onClick={handleClose} >
+                <Link to="/registration" className={classes.header__navfont}>Sign up</Link>
               </MenuItem>
             </Menu> 
           </Box>
