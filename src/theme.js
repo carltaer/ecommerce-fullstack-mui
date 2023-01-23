@@ -1,6 +1,7 @@
-import { useTheme } from "@material-ui/core/styles"
+import { createMuiTheme } from "@material-ui/core/styles"
 
-const theme = useTheme ({
+
+const theme = createMuiTheme ({
     palette: {
         primary: {
             main: "#fff",
@@ -26,4 +27,4 @@ const theme = useTheme ({
     },
 })
 
-export default th
+export default theme
