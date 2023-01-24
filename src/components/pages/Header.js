@@ -27,13 +27,12 @@ import {
       margin: "0 10px",
       fontWeight: 700,
       color: "black",
-      fontSize: "15px",
     },
     header__button_icon: {
       fontSize: 20,
     },
     header__title: {
-      fontFamily: 'roboto',
+      fontFamily: 'cursive',
     },
     header__button_account: {
       borderRadius: 0,
