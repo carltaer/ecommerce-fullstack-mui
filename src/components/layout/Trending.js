@@ -12,11 +12,15 @@ import GridListTileBar from '@material-ui/core/GridListTileBar'
 
 import items from "../../items"
 
+import "../../assets/fonts/static/Inter-Medium.ttf"
+
+
 const useStyles = makeStyles((theme)=>({
   root: {
-    margin: "auto",
+    margin: "0 auto",
     width: "80%",
     padding: 50,
+
   },
   trending__container: {
     display: "flex",
@@ -29,10 +33,34 @@ const useStyles = makeStyles((theme)=>({
     margin: "30px auto",
     maxWidth: 400,
     minWidth: 300,
+    textShadow: "3px 3px 5px rgba(0, 0, 128, 1)",
+
+  },
+  trending__more: {
+    height: 300,
+    color: "#e0e0e0",
+    fontSize: "12px",
+    textDecoration: "none",
+    fontFamily: "Inter",
+  },
+  rating__container: {
+    color: "#ffdd08",
+    margin: "30px 0",
+    justifyContent: "space-between",
+    alignContent: "flex-start",
+    alignItems: "flex-start",
+  },
+  trending__name:  {
+    margin: 0,
+    padding: 0,
+    fontSize: "25px",
+    fontFamily: "Inter",
   },
   trending__brand: {
-    color: "steelblue",
-  },
+    marginBottom: "50px",
+  }
+
+
 
 }))
  
@@ -42,7 +70,7 @@ const Trending = () => {
   return (
     <Box component="section" className={classes.root}>
       <Typography variant="h4">Top Picks</Typography>
-      <GridList cellHeight={250} className={classes.trending__container}>
+      <GridList cellHeight={300} className={classes.trending__container}>
         {items.map((item)=> ( 
           <GridListTile key={item._id} className={classes.trending__item}>
             <img src={item.image} alt={item.name} />
@@ -58,7 +86,9 @@ const Trending = () => {
                     <div className={classes.rating__container}>
                       <h3>
                         Rated {item.rating}
-                        <StarIcon className={classes.rating__icon} />
+                        <StarIcon className={classes.rating__icon} fontSize="10px" />
+                        <div>({item.numReviews} Reviews)</div>
+                        
                       </h3>
                     </div>
                   </div>
