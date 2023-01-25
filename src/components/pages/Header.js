@@ -32,7 +32,7 @@ import {
       fontSize: 20,
     },
     header__title: {
-      fontFamily: 'cursive',
+      fontFamily: 'open sans',
     },
     header__button_account: {
       borderRadius: 0,
