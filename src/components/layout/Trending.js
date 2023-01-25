@@ -80,7 +80,7 @@ const Trending = () => {
               subtitle={
                 <Link  to={`/item` + item._id}>
                   <div className={classes.trending__more}>
-                    <h3 className={classes.trending__brand}>by {item.brand}</h3>
+                    <h3 className={classes.trending__brand}>by: {item.brand}</h3>
                     <h2 className={classes.trending__price}>${item.price}</h2>
 
                     <div className={classes.rating__container}>

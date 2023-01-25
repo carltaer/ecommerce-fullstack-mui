@@ -16,6 +16,8 @@ import {
  import LocalMallIcon from '@mui/icons-material/LocalMall';
  import { Link } from 'react-router-dom';
 
+ import "../../assets/fonts/static/Inter-ExtraBold.ttf"
+
 
 
  const useStyles = makeStyles((theme) => ({
@@ -32,7 +34,7 @@ import {
       fontSize: 20,
     },
     header__title: {
-      fontFamily: 'open sans',
+      fontFamily: 'Inter',
     },
     header__button_account: {
       borderRadius: 0,
@@ -41,6 +43,7 @@ import {
       color: "black",
       fontSize: "15px",
       border: "1px solid black",
+      fontFamily: 'Inter',
     },
     header__navfont: {
       textDecoration: "none",

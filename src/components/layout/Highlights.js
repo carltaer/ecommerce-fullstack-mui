@@ -2,6 +2,8 @@ import React from 'react'
 import { Box, makeStyles, Typography } from "@material-ui/core"
 import backgroundImage from "../../assets/img/shopping.jpg"
 
+import "../../assets/fonts/static/Inter-Bold.ttf"
+
 
 const useStyles = makeStyles((theme)=>({
   highlight:{
@@ -14,8 +16,9 @@ const useStyles = makeStyles((theme)=>({
     height: 400,
   },
   highlight__title: {
+    fontFamily: "inter",
     textAlign: "center",
-    fontSize: "4em",
+    fontSize: "3.5em",
     fontWeight: 900,
     textTransform: "uppercase",
     borderTop: "12px solid #ffdd08",
