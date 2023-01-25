@@ -94,10 +94,10 @@ const Header = () => {
               onClose={handleClose}
             >
               <MenuItem onClick={handleClose}>
-                <Link to="/login" className={classes.header__navfont}>Login</Link>
+                <Link to="./login" className={classes.header__navfont}>Login</Link>
               </MenuItem>
               <MenuItem onClick={handleClose} >
-                <Link to="/registration" className={classes.header__navfont}>Sign up</Link>
+                <Link to="./registration" className={classes.header__navfont}>Sign up</Link>
               </MenuItem>
             </Menu> 
           </Box>

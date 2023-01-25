@@ -1,10 +1,14 @@
 import React from 'react'
+import { Box } from '@material-ui/core'
+import Trending from "../layout/Trending"
+import Highlights from "../layout/Highlights"
 
 const Landing = () => {
   return (
-    <div>
-      
-    </div>
+    <Box>
+      <Highlights />
+      <Trending />
+    </Box>
   )
 }
 

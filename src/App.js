@@ -22,12 +22,12 @@ const App = () => {
         <Box component="main">
         <Header/>
           <Routes>
-            <Route path="./" component={Landing} exact />
-            <Route path="./login" component={Login} exact />
-            <Route path="./register" component={Registration} exact />
-            <Route path="./forgot" component={Forgot} exact />
-            <Route path="./cart" component={Cart} exact />
-            <Route path=". /item/:id" component={Item} />
+            <Route path="/" element={<Landing />} exact /> 
+            <Route path="./login" element={<Login/>} exact />
+            <Route path="./registration" element={<Registration />} exact />
+            <Route path="./forgot" element={<Forgot />} exact />
+            <Route path="./cart" element={<Cart />} exact />
+            <Route path=". /item/:id" element={<Item />} />
           </Routes>
         </Box>
       </ThemeProvider>
