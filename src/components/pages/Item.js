@@ -11,7 +11,7 @@ import {
   makeStyles,
   Typography,
 } from "@material-ui/core"
-import { Rating } from "@mui/lab"
+import { Rating } from '@mui/material'
 
 
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart'
@@ -19,7 +19,7 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import ShareIcon from '@mui/icons-material/Share'
 
-import { useNavigate } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import items from '../../items'
 import { blue, green, orange, red } from "@material-ui/core/colors"
 
@@ -30,8 +30,6 @@ const useStyles = makeStyles((them)=>({
   },
   item__container: {
     paddingTop: 20,
-    height: "500px",
-    width: "500px",
   },
   item__image: {
     maxWidth: "100%",
@@ -41,8 +39,6 @@ const useStyles = makeStyles((them)=>({
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    color: "black",
-    fontSize: "12px",
   },
   item__brand: {
     marginLeft: 5,
@@ -63,12 +59,10 @@ const useStyles = makeStyles((them)=>({
   },
   item__price: {
     fontWeight: 700,
-    color: "black",
 
   },
   item__stock: {
     fontWeight: 700,
-    color: "black",
 
   },
   item__limited: {
@@ -91,10 +85,12 @@ const useStyles = makeStyles((them)=>({
   },
 }))
 
-const Item = ({ match }) => {
+const Item = () => {
   const history = useNavigate()
   const classes = useStyles()
-  const item = items.find(item => item._id === (match.params.id))
+
+  const { id } = useParams()
+  const item = items.find(item => item._id === id)
   
   return (
     <>
@@ -151,7 +147,7 @@ const Item = ({ match }) => {
             item.countInStock === 0
               ? classes.item__out
               :item.countInStock < 20
-              ? classes.item.item__limited
+              ? classes.item__limited
               :classes.item__stock
           }
           >
