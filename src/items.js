@@ -1,6 +1,6 @@
 const items = [
     {
-        _id: 1,
+        _id: "1",
         name: "Wristwatch",
         image: "https://images.unsplash.com/photo-1587925358603-c2eea5305bbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
         description: "Who needs phones, right?",
@@ -13,7 +13,7 @@ const items = [
         numReviews: 50,
     },
     {
-        _id: 2,
+        _id: "2",
         name: "Running Shoes",
         image: "https://images.unsplash.com/photo-1611080027147-a1a0b6e05168?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
         description: "Keeps you running",
@@ -26,7 +26,7 @@ const items = [
         numReviews: 134,
     },
     {
-        _id: 3,
+        _id: "3",
         name: "Leather Shoes",
         image: "https://images.unsplash.com/photo-1616406432452-07bc5938759d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
         description: "For Him",
@@ -39,7 +39,7 @@ const items = [
         numReviews: 5,
     },
     {
-        _id: 4,
+        _id: "4",
         name: "Ring",
         image: "https://images.unsplash.com/photo-1586104237516-5b7075e00d45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
         description: "Engages you",
@@ -52,7 +52,7 @@ const items = [
         numReviews: 12,
     },
     {
-        _id: 5,
+        _id: "5",
         name: "Shirts",
         image: "https://images.unsplash.com/photo-1602810316693-3667c854239a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
         description: "Hides the true you",
@@ -65,7 +65,7 @@ const items = [
         numReviews: 662,
     },
     {
-        _id: 6,
+        _id: "6",
         name: "Heels",
         image: "https://images.unsplash.com/photo-1574791418059-2e8d961ab4fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=889&q=80",
         description: "You must treat her with these",
