@@ -15,6 +15,8 @@ import items from "../../items"
 import "../../assets/fonts/static/Inter-Medium.ttf"
 
 
+
+
 const useStyles = makeStyles((theme)=>({
   root: {
     margin: "0 auto",
@@ -78,11 +80,11 @@ const Trending = () => {
               className={classes.trending__info}
               title={<h1 className={classes.trending__name} >{item.name}</h1>}
               subtitle={
-                <Link  to={`/item` + item._id}>
+                <Link  to={`./item` + item._id}>
                   <div className={classes.trending__more}>
                     <h3 className={classes.trending__brand}>by: {item.brand}</h3>
                     <h2 className={classes.trending__price}>${item.price}</h2>
-
+                 
                     <div className={classes.rating__container}>
                       <h3>
                         Rated {item.rating}
@@ -98,6 +100,8 @@ const Trending = () => {
           </GridListTile>
         ))}
       </GridList>
+              
+
     </Box>
   )
 }
