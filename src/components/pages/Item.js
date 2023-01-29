@@ -94,7 +94,7 @@ const useStyles = makeStyles((them)=>({
 const Item = ({ match }) => {
   const history = useNavigate()
   const classes = useStyles()
-  const item = items.find(item => item._id === match.params.id)
+  const item = items.find(item => item._id === (match.params.id))
   
   return (
     <>
