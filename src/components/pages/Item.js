@@ -31,6 +31,11 @@ const useStyles = makeStyles((them)=>({
   item__container: {
     paddingTop: 20,
   },
+  icon__history: {
+    color: "black",
+    fontSize: "20px",
+    margin: "20px 20px"
+  },
   item__image: {
     maxWidth: "100%",
     border: "1px solid #e9e9e9"
@@ -96,9 +101,10 @@ const Item = () => {
     <>
     <Button
     onClick={() => {
-      history.goBack();
+      window.history.back();
     }}
     startIcon={<ChevronLeftIcon />}
+    className={classes.icon__history}
     >
       Go Back
     </Button>
