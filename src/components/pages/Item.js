@@ -19,11 +19,11 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import ShareIcon from '@mui/icons-material/Share'
 
-import { useNavigate, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import items from '../../items'
 import { blue, green, orange, red } from "@material-ui/core/colors"
 
-const useStyles = makeStyles((them)=>({
+const useStyles = makeStyles((theme)=>({
   root: {
     margin: "auto",
     pading: 50,
@@ -91,7 +91,7 @@ const useStyles = makeStyles((them)=>({
 }))
 
 const Item = () => {
-  const history = useNavigate()
+
   const classes = useStyles()
 
   const { id } = useParams()
