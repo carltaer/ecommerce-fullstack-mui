@@ -17,7 +17,11 @@ import { makeStyles } from '@material-ui/core'
       border: "1px solid rgba(az)",
       margin: "0 auto",
       width: "500px",
-    }
+    },
+    registration__input: {
+      marginTop: "25px",
+    },
+    
   }))
 
 const Registration = () => {
@@ -27,19 +31,19 @@ const Registration = () => {
     <div className={classes.registration__container}>
       <FormControl className={classes.registration__form}>
 
-        <InputLabel htmlFor="my-input">Email address</InputLabel>
+        <InputLabel htmlFor="my-input" className={classes.registration__input}>Email address</InputLabel>
           <Input id="my-input" aria-describedby="my-helper-text" />
 
-        <InputLabel htmlFor="my-input" placeholder='Enter your first name'>First Name</InputLabel>
+        <InputLabel htmlFor="my-input" className={classes.registration__input}>First Name</InputLabel>
           <Input id="my-input" aria-describedby="my-helper-text" />
 
-        <InputLabel htmlFor="my-input" placeholder='Enter your first name'>Last Name</InputLabel>
+        <InputLabel htmlFor="my-input" className={classes.registration__input}>Last Name</InputLabel>
           <Input id="my-input" aria-describedby="my-helper-text" />
 
-        <InputLabel htmlFor="my-input" placeholder='Enter your first name'>Password</InputLabel>
+        <InputLabel htmlFor="my-input" className={classes.registration__input}>Password</InputLabel>
           <Input id="my-input" aria-describedby="my-helper-text" />
         
-        <InputLabel htmlFor="my-input" placeholder='Enter your first name'>Confirm Password</InputLabel>
+        <InputLabel htmlFor="my-input" className={classes.registration__input}>Confirm Password</InputLabel>
           <Input id="my-input" aria-describedby="my-helper-text" />
       
       </FormControl>
