@@ -9,17 +9,20 @@ import { makeStyles } from '@material-ui/core'
       pading: 50,
     },
     registration__container: {
-      border: "1px solid black",
       margin: "0 auto",
       maxWidth: "500px",
     },
     registration__form: {
-      border: "1px solid rgba(az)",
+      border: "5px solid rgba(0, 0, 0, 0.3)",
+      borderRadius: "10px",
       margin: "0 auto",
       width: "500px",
+      padding: "20px",
     },
     registration__input: {
       marginTop: "25px",
+      marginLeft: "10px",
+      maxWidth: "60px",
     },
     
   }))
@@ -29,6 +32,7 @@ const Registration = () => {
 
   return (
     <div className={classes.registration__container}>
+      <h1>Getting Started</h1>
       <FormControl className={classes.registration__form}>
 
         <InputLabel htmlFor="my-input" className={classes.registration__input}>Email address</InputLabel>
