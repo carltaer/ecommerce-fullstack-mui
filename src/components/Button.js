@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
-const Button = () => {
+const Button = (props) => {
+  useEffect(()=>{
+   
+  },[props])
+
   return (
-    <div>
-      
-    </div>
+    <button disabled={!props.isEnabled}>{props.name}</button>
   )
 }
 

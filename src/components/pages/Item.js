@@ -26,7 +26,8 @@ import { blue, green, orange, red } from "@material-ui/core/colors"
 const useStyles = makeStyles((theme)=>({
   root: {
     margin: "auto",
-    pading: 50,
+    width: "80%",
+    padding: 50,
   },
   item__container: {
     paddingTop: 20,
@@ -114,7 +115,7 @@ const Item = () => {
           src={item.image}
           alt={item.name}
           className={classes.item__image}
-        />
+        /> 
       </Grid>
       <Grid item xs={6} className={classes.item__info}>
         <Box>
