@@ -1,5 +1,8 @@
 import React, { useState, useEffect} from 'react'
 
+
+import { Link } from 'react-router-dom'
+
 import "../../src/assets/fonts/static/Inter-Bold.ttf"
 
 import Button from "./Button"
@@ -43,6 +46,17 @@ const useStyles = makeStyles(()=>({
         alignContent: "center",
         justifyContent: "center",
         letterSpacing: "3px",
+    },
+    formlogin__forgotText: {
+        display: "flex",
+        fontSize: "20px",
+        alignItems: "center",
+        alignContent: "center",
+        justifyContent: "center",
+        marginBottom: "20px",
+        textDecoration: "none",
+        color: "steelblue",
+        fontFamily: "Inter",
     }
 }))
 
@@ -72,6 +86,7 @@ const FormLogin = () => {
             <Email setIsEmailValid={setIsEmailValid} />
             <Password setIsPasswordValid={setIsPasswordValid} />
             <Button name="Login" isEnabled={isFormValid} />
+            <Link to="/forgot" className={classes.formlogin__forgotText}>Forgot Password?</Link>
           </div>
         </div>
       </React.Fragment>

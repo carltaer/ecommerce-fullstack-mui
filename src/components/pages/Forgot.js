@@ -1,9 +1,10 @@
 import React from 'react'
+import LayoutForgot from '../layout/LayoutForgot'
 
 const Forgot = () => {
   return (
     <div>
-      FORGOT
+      <LayoutForgot />
     </div>
   )
 }
