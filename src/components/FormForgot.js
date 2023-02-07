@@ -18,6 +18,7 @@ formlogin__container: {
     margin: "0 auto",
     color: "#626262",
     marginTop: 0,
+
 },
 formlogin__input_container: {
     margin: "0 auto",
@@ -30,10 +31,11 @@ formlogin__input_container: {
     border: "3px solid rgba(0, 0, 0, 0.3)",
     borderRadius: "20px 0 20px 0",
     marginBottom: "20px",
+    paddingLeft: "20px",
 },
 formlogin__text: {
     display: 'flex',
-    fontSize: "30px",
+    fontSize: "25px",
     fontFamily: "Inter",
     paddingTop: "20px",
     marginBottom: 0,

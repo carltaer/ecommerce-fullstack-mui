@@ -34,10 +34,11 @@ const useStyles = makeStyles(()=>({
         border: "3px solid rgba(0, 0, 0, 0.3)",
         borderRadius: "20px 0 20px 0",
         marginBottom: "20px",
+        paddingLeft: "20px",
     },
     formlogin__text: {
         display: 'flex',
-        fontSize: "30px",
+        fontSize: "25px",
         fontFamily: "Inter",
         paddingTop: "20px",
         marginBottom: 0,
@@ -46,6 +47,7 @@ const useStyles = makeStyles(()=>({
         alignContent: "center",
         justifyContent: "center",
         letterSpacing: "3px",
+
     },
     formlogin__forgotText: {
         display: "flex",
@@ -57,6 +59,7 @@ const useStyles = makeStyles(()=>({
         textDecoration: "none",
         color: "steelblue",
         fontFamily: "Inter",
+
     }
 }))
 
