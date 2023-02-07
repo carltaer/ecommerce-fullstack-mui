@@ -14,28 +14,36 @@ import Terms from "./Terms"
 
 const useStyles = makeStyles((theme)=>({
   root: {
-    margin: "0 auto",
     width: "80%",
-    padding: 50,
+    padding: "50px",
   },
   form__container: {
     maxWidth: "400px",
+    height: "100%",
     margin: "0 auto",
+    color: "#626262",
   },
   form__text: {
+    display: 'flex',
     fontSize: "30px",
     fontFamily: "Inter",
-    marginBottom: "0",
-    
+    paddingTop: "20px",
+    marginBottom: 0,
+    color: "#E9DCC9",
+    alignItems: "center",
+    alignContent: "center",
+    justifyContent: "center",
+    letterSpacing: "5px",
   },
   form__input_container: {
     margin: "0 auto",
     display: "flex",
     flexDirection: "column",
     alignContent: "center",
-    background: "gray",
+    background: "rgb(250, 249, 246, 0.8)",
     border: "3px solid rgba(0, 0, 0, 0.3)",
-    borderRadius: "10px",
+    borderRadius: "20px 0 20px 0",
+    marginBottom: "20px",
   },
 
 }))
@@ -83,7 +91,7 @@ const Form = () => {
           <Names setIsNamesValid={setIsNamesValid} />
           <Sex setIsSexValid={setIsSexValid} />
           <Terms setIsTermsValid={setIsTermsValid} />
-          <Button name="Log in" isEnabled={isFormValid} />
+          <Button name="Sign up" isEnabled={isFormValid} />
         </div>
       </div>
     </React.Fragment>

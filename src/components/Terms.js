@@ -8,15 +8,18 @@ import "../assets/fonts/static/Inter-Light.ttf"
 const useStyles = makeStyles((theme)=>({
   form__terms_container: {
     fontFamily: "Inter",
-    marginTop: "10px",
+    marginTop: "12px",
   },
   form__terms_box: {
-    height: "15px",
-    width: "15px",
-    marginLeft: "10px",
+    height: "12px",
+    width: "12px",
+    marginLeft: "17px",
   },
   form__terms_link: {
     textDecoration: "none",
+    paddingLeft: "5px",
+    fontSize: "12px",
+    fontWeight: "bold",
   }
 }))
 
