@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme)=>({
   },
   item__container: {
     paddingTop: 20,
+    display: "flex",
   },
   icon__history: {
     color: "black",
@@ -41,14 +42,8 @@ const useStyles = makeStyles((theme)=>({
     maxWidth: "100%",
     border: "1px solid #e9e9e9"
   },
-  item__info: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-  },
   item__brand: {
     marginLeft: 5,
-    color: "black",
   },
   item__description: {
     fontStyle: "italic",
@@ -57,6 +52,8 @@ const useStyles = makeStyles((theme)=>({
   item__highlight: {
     backgroundColor: "#ffffd6",
     color: "black",
+    display: "flex",
+    flexDirection: "column",
   },
   item__presale: {
     textDecoration: "line-through",
@@ -109,6 +106,7 @@ const Item = () => {
     >
       Go Back
     </Button>
+    <div className={classes.item__container_contents}>
     <Grid container spacing={3} className={classes.item__container}>
       <Grid item xs={6}>
         <img
@@ -117,6 +115,7 @@ const Item = () => {
           className={classes.item__image}
         /> 
       </Grid>
+      
       <Grid item xs={6} className={classes.item__info}>
         <Box>
           <Typography component="span">
@@ -185,6 +184,7 @@ const Item = () => {
         </Button>
       </CardActions>
     </Card>
+    </div>
     <Box>
       <Divider />
       <Grid container spacing={1}>
